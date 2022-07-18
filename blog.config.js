@@ -1,8 +1,8 @@
 // 注: process.env.XX是Vercel的环境变量，配置方式见：https://docs.tangly1024.com/zh/features/personality
 const BLOG = {
-  AUTHOR: 'tangly1024', // 作者
-  BIO: '一个普通的干饭人🍚', // 作者简介
-  LINK: 'https://tangly1024.com', // 网站地址
+  AUTHOR: 'zmendax', // 作者
+  BIO: '程序员下岗再就业', // 作者简介
+  LINK: 'https://mendax.cn', // 网站地址
   KEYWORDS: 'Notion, 博客', // 网站关键词 英文逗号隔开
   NOTION_PAGE_ID:
   process.env.NOTION_PAGE_ID || '02ab3b8678004aa69e9e415905ef32a5', // Important page_id！！！Duplicate Template from  https://www.notion.so/tanghh/02ab3b8678004aa69e9e415905ef32a5
@@ -42,10 +42,10 @@ const BLOG = {
   PREVIEW_TAG_COUNT: 16, // 首页最多展示的标签数量，0为不限制
 
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
-  CONTACT_EMAIL: 'mail@tangly1024.com',
+  CONTACT_EMAIL: 'zmendax@gmail.com',
   CONTACT_WEIBO: '',
   CONTACT_TWITTER: '',
-  CONTACT_GITHUB: 'https://github.com/tangly1024',
+  CONTACT_GITHUB: 'https://github.com/zmendax',
   CONTACT_TELEGRAM: '',
 
   // 鼠标点击烟花特效
@@ -55,7 +55,7 @@ const BLOG = {
   WIDGET_PET: process.env.NEXT_PUBLIC_WIDGET_PET || true, // 是否显示宠物挂件
   WIDGET_PET_LINK:
     'https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json', // 挂件模型地址 @see https://github.com/xiazeyu/live2d-widget-models
-  WIDGET_PET_SWITCH_THEME: true, // 点击宠物挂件切换博客主题
+  WIDGET_PET_SWITCH_THEME: false, // 点击宠物挂件切换博客主题
 
   // 评论互动 可同时开启多个支持 GISCUS CUSDIS UTTERRANCES GITALK
 
