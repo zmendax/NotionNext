@@ -7,6 +7,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Code } from 'react-notion-x/build/third-party/code'
 
+// 支持更多的自定义语言
+import 'prismjs/components/prism-r.js'
+
 const Collection = dynamic(() =>
   import('react-notion-x/build/third-party/collection').then((m) => m.Collection), { ssr: true }
 )
@@ -74,7 +77,7 @@ const NotionPage = ({ post }) => {
     addWatch4Dom()
   }, [])
 
-  return <div id='container' className='max-w-4xl mx-auto'>
+  return <div id='container' className='max-w-5xl overflow-x-hidden mx-auto'>
     <NotionRenderer
       recordMap={post.blockMap}
       mapPageUrl={mapPageUrl}
@@ -161,7 +164,7 @@ function fixCopy(codeCopy) {
  */
 const mapPageUrl = id => {
   // return 'https://www.notion.so/' + id.replace(/-/g, '')
-  return '/article/' + id.replace(/-/g, '')
+  return '/' + id.replace(/-/g, '')
 }
 
 function getMediumZoomMargin() {
